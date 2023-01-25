@@ -19,22 +19,27 @@ int main(){
     struct stack *a=(struct stack *)malloc(sizeof(struct stack));
     create_empty_stack(a);
     do{
-    printf("FOR ENTER NEW ELEMENT PRESS 0.\n ");
+    printf("FOR ENTER NEW ELEMENT PRESS 0.\n");
     printf("FOR DELETING LATEST ELEMENT PRESS 1.\n");
     printf("FOR DISPLAYING STACK PRESS 2.\n");
-    printf("PRESS ( 0 || 1 || 2 ):");
+    printf("EXIT FROM PROGRAM PRESS 0.\n");
+    printf("PRESS ( 1 || 2 || 3 || 0 ):"); 
     scanf("%d",&b);
-    if (b==0){
+    if (b==1){
         push(a);
     }
-   /* else if(b==1){
+    else if(b==2){
         pop(a);
-    }*/
-    else if (b==2){
+    }
+    else if (b==3){
         display(a);
+    }
+    else if(b==0){
+         break;
     }
     else{
         printf("INVALID INPUT ");
+       
 
     }
     
@@ -77,6 +82,16 @@ void push(struct stack *a){
             count++;
         }while(c==0);
     }
+}
+void pop(struct stack *a){
+    if(isempty(a)){
+        printf("STACK IS EMPTY .\n");
+    }
+    else{
+        a->top=a->top-1;
+        count--;
+    }
+
 }
 void display(struct stack *a){
     int i=0;
