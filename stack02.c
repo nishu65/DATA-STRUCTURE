@@ -19,9 +19,9 @@ int main(){
     struct stack *a=(struct stack *)malloc(sizeof(struct stack));
     create_empty_stack(a);
     do{
-    printf("FOR ENTER NEW ELEMENT PRESS 0.\n");
-    printf("FOR DELETING LATEST ELEMENT PRESS 1.\n");
-    printf("FOR DISPLAYING STACK PRESS 2.\n");
+    printf("FOR ENTER NEW ELEMENT PRESS 1.\n");
+    printf("FOR DELETING LATEST ELEMENT PRESS 2.\n");
+    printf("FOR DISPLAYING STACK PRESS 3.\n");
     printf("EXIT FROM PROGRAM PRESS 0.\n");
     printf("PRESS ( 1 || 2 || 3 || 0 ):"); 
     scanf("%d",&b);
