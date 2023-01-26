@@ -44,6 +44,7 @@ int main(){
     }
     
     }while(1);
+    free(a);
 
 
 }
