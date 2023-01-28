@@ -81,7 +81,7 @@ void display()
         printf("QUEUE :");
         for (a = front; a <= rear; a++)
         {
-            printf("%d", array[a]);
+            printf("%d\t", array[a]);
         }
         printf("\n");
     }
